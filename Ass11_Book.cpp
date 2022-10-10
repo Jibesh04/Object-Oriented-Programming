@@ -75,8 +75,8 @@ int main(){
 }
 
 /* TERMINAL
-PS D:\New folder> g++ -o Ass11_Book.exe .\Ass11_Book.cpp
-PS D:\New folder> .\Ass11_Book.exe
+PS D:\Junior\Study\Object-Oriented-Programming> g++ -o Ass11_Book.exe .\Ass11_Book.cpp 
+PS D:\Junior\Study\Object-Oriented-Programming> .\Ass11_Book.exe 
 Enter number of items: 2
 S.N. 1 Enter details...
         Author: Author 1
