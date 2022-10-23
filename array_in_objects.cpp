@@ -34,7 +34,7 @@ void Items::add(){
   n++;
 }
 void Items::delete_n(int i){
-  for(int j = n-1; j > i; j++){
+  for(int j = n - 1; j > i; j--){
     item_code[j + 1] = item_code[j];
     item_price[j + 1] = item_price[j];
     item_qty[j + 1] = item_qty[j];
