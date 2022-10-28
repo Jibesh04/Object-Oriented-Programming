@@ -52,6 +52,9 @@ class Savings:public Accounts{
         void calc();
     public:
         void interest();
+        void cheque(float){
+            cout<<"Cheque Facility Not Available for Savings Account\n";
+        }
 };
 void Savings::calc(){
     float pr_amt = balance;
@@ -77,6 +80,7 @@ class Current:public Accounts{
         float min;
     public:
         void check_min();
+        void cheque(float);
 };
 void Current::check_min(){
     cout<<"Enter the minimum balance: Rs. ";
@@ -88,6 +92,17 @@ void Current::check_min(){
         cin>>sr_chrg;
         balance -= sr_chrg;
         cout<<"Rs. "<<sr_chrg<<" was Deducted\n";
+    }
+}
+void Current::cheque(float amt){
+    if(amt > balance)
+        cout<<"Insufficient Balance\n";
+    else{
+        char chq_no[12];
+        cout<<"Enter Cheque Number: ";
+        cin>>chq_no;
+        balance -= amt;
+        cout<<"Rs. "<<amt<<" Debited through Cheque Number: "<<chq_no<<endl;
     }
 }
 float input(){
@@ -105,11 +120,15 @@ int main(){
     S1.deposit(input());
     cout<<"For Withdraw...\n";
     S1.withdraw(input());
+    cout<<"Through Cheque...\n";
+    S1.cheque(input());
     S1.display();
     S1.interest();
     cout<<"Current Account...\n";
     C1.input();
     C1.check_min();
+    cout<<"Withdrawal through Cheque...\n";
+    C1.cheque(input());
     C1.display();
     return 0;
 }
@@ -118,30 +137,37 @@ int main(){
 PS D:\Junior\Study\Object-Oriented-Programming> g++ -o hierarchial_inheritance.exe .\hierarchial_inheritance.cpp
 PS D:\Junior\Study\Object-Oriented-Programming> .\hierarchial_inheritance.exe
 Savings Account...
-Enter Name: Jibesh Kumar Panda 
-Account Number: 2102040024
-Opening Balance: Rs. 50000
-For Deposit...
-Enter the amount: 3000 
-Rs. 3000 Credited
-For Withdraw...
-Enter the amount: 2000
-Rs. 2000 Debited
-Name: Jibesh Kumar Panda
-Account Number: 2102040024
-Balance: Rs. 51000
-Interest rate: 0.05
-Time Duration (in Months): 19
-Balance After Interest Computation : Rs. 59530.9
-Current Account...
 Enter Name: Jibesh Kumar Panda
 Account Number: 2102040024
 Opening Balance: Rs. 50000
-Enter the minimum balance: Rs. 50001
-Balance Below Limit
-Enter the additional Service Charge: 12
-Rs. 12 was Deducted
+For Deposit...
+Enter the amount: 1000
+Rs. 1000 Credited
+For Withdraw...
+Enter the amount: 200
+Rs. 200 Debited
+Through Cheque...
+Enter the amount: 25000
+Cheque Facility Not Available for Savings Account
 Name: Jibesh Kumar Panda
 Account Number: 2102040024
-Balance: Rs. 49988
+Balance: Rs. 50800
+Interest rate: 0.05
+Time Duration (in Months): 16
+Balance After Interest Computation : Rs. 57873.9
+Current Account...
+Enter Name: Ramakant Sahoo
+Account Number: 2102041050
+Opening Balance: Rs. 2000
+Enter the minimum balance: Rs. 5000
+Balance Below Limit
+Enter the additional Service Charge: Rs. 100
+Rs. 100 was Deducted
+Withdrawal through Cheque...
+Enter the amount: 900
+Enter Cheque Number: C31E4I99
+Rs. 900 Debited through Cheque Number: C31E4I99
+Name: Ramakant Sahoo
+Account Number: 2102041050
+Balance: Rs. 1000
 */
