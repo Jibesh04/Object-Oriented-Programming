@@ -1,4 +1,4 @@
-/* Write a program to overload increment operator '++' using friend function */
+/* 2. Write a program to overload increment operator '++' using friend function */
 #include <iostream>
 using namespace std;
 class number{
