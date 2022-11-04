@@ -27,5 +27,5 @@ int main(){
 PS D:\Junior\Study\Object-Oriented-Programming> g++ -o type_casting.exe .\type_casting.cpp 
 PS D:\Junior\Study\Object-Oriented-Programming> .\type_casting.exe
 Enter the time in seconds: 5000
-1 hours : 23 minutes
+1 hours : 23 minutes 
 */
