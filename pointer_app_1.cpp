@@ -1,3 +1,4 @@
+/* Write a program to add all even numbers in an array using pointers */
 #include <iostream>
 using namespace std;
 class Array{
