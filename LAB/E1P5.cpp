@@ -1,4 +1,4 @@
-/* Write a Program to calculate and display factorial of a number using loop */
+/* Write a Program to calculate and display factorial of a number using recursion */
 #include <iostream>
 using namespace std;
 class Number{
