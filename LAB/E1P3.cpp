@@ -8,6 +8,7 @@ class Number{
     public:
         Number(){n = 0;}
         Number(int num){n = num;}
+        ~Number(){}
         void display();
 };
 int Number::isPrime(int n){
