@@ -7,6 +7,7 @@ class Number{
     public:
         Number(){num = 0;}
         Number(int x){num = x;}
+        ~Number(){}
         void display();
 };
 unsigned long int Number::factorial(unsigned int num){
