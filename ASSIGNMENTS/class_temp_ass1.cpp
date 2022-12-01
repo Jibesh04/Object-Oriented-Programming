@@ -64,4 +64,13 @@ Enter a b and c (space separated): 1.5 2.2 4
 The entered equation is: 1.5x^2 + 2.2x + 4 = 0
 x1 = -0.733333 + 1.45907i
 x2 = -0.733333 - 1.45907i
+
+
+Test Case 2
+PS D:\Junior\Study\Object-Oriented-Programming\ASSIGNMENTS> ./class_temp_ass1.exe
+For Integral Coefficients...
+For ax^2 + bx + c = 0
+Enter a b and c (space separated): 0 2 3
+The entered equation is: 0x^2 + 2x + 3 = 0
+Not a quadratic equation
 */
