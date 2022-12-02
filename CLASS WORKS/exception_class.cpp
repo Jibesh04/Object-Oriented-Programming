@@ -49,7 +49,7 @@ int main(){
     return 0;
 }
 
-/* TERMINAL
+/* TERMINAL 
 PS D:\Junior\Study\Object-Oriented-Programming\CLASS WORKS> g++ -o .\exception_class.exe .\exception_class.cpp
 PS D:\Junior\Study\Object-Oriented-Programming\CLASS WORKS> .\exception_class.exe
  5
